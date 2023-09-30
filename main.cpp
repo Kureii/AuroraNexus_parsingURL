@@ -139,11 +139,8 @@ int main() {
               }
             }
           }
-
-
           csvFile << "," << duration;
         }
-
         csvFile << "\n";
         iterator++;
       }
@@ -153,7 +150,6 @@ int main() {
   errorLog.close();
   csvFile.close();
 
-  // Spustit Python skript
   std::system(
       "python3 -m venv venv && "
       "source venv/bin/activate && "
